@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="manufacturers-container">
+        <ul class="manufacturers-list">
+            {% for manufacturer in manufacturers %}
+                <li>
+                    <h3>{{ manufacturer.name }}</h3>
+                    <ul class="manufacturer-details">
+                        <li><strong>Country:</strong> {{ manufacturer.country }}</li>
+                        <li><strong>Website:</strong> <a href="{{ manufacturer.website }}">{{ manufacturer.website }}</a></li>
+                        <li><strong>Contact Person:</strong> {{ manufacturer.contact_person }}</li>
+                        <li><strong>Email:</strong> {{ manufacturer.email }}</li>
+                        <li><strong>Phone Number:</strong> {{ manufacturer.phone_number }}</li>
+                        <li><strong>Address:</strong> {{ manufacturer.address }}</li>
+                    </ul>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

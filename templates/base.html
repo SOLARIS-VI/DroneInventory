@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AERIUS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/inventory">INVENTORY</a></li>
+                <li><a href="/inventory/new">PRODUCTS</a></li>
+                <li><a href="/manufacturers">MANUFACTURERS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="table-container">
+        <table class="inventory-table">
+            <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>MANUFACTURER</th>
+                    <th>STOCK QUANTITY</th>
+                    <th>BUYING COST</th>
+                    <th>SELLING PRICE</th>
+                    <th>ACTIONS</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for product in products %}
+                    <tr>
+                        <td>{{ product.name }}</td>
+                        <td>{{ product.manufacturer.name }}</td>
+                        <td>{{ product.stock_quantity }}</td>
+                        <td>£{{ product.buying_cost }}</td>
+                        <td>£{{ product.selling_price }}</td>
+                        <td>
+                            <form action="/inventory/{{ product.id }}/delete" method="post">
+                                <button type="submit" class="delete-button">Delete</button>
+                                <a href="/inventory/{{ product.id }}" class="view-button">View</a>
+                                <a href="/inventory/{{ product.id }}/edit" class="edit-button">Edit</a>
+                            </form>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

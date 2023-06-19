@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Edit Product</h2>
+    <form method="POST" action="/inventory/{{ product.id }}">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="{{ product.name }}" required>
+        </div>
+        <div>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required>{{ product.description }}</textarea>
+        </div>
+        <div>
+            <label for="stock_quantity">Stock Quantity:</label>
+            <input type="number" id="stock_quantity" name="stock_quantity" value="{{ product.stock_quantity }}" required>
+        </div>
+        <div>
+            <label for="buying_cost">Buying Cost:</label>
+            <input type="number" step="0.01" id="buying_cost" name="buying_cost" value="{{ product.buying_cost }}" required>
+        </div>
+        <div>
+            <label for="selling_price">Selling Price:</label>
+            <input type="number" step="0.01" id="selling_price" name="selling_price" value="{{ product.selling_price }}" required>
+        </div>
+        <div>
+            <label for="manufacturer_id">Manufacturer:</label>
+            <select id="manufacturer_id" name="manufacturer_id" required>
+                {% for manufacturer in manufacturers %}
+                    <option value="{{ manufacturer.id }}" {% if manufacturer.id == product.manufacturer.id %}selected{% endif %}>{{ manufacturer.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button type="submit">Update Product</button>
+    </form>
+{% endblock %}

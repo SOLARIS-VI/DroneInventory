@@ -1,0 +1,361 @@
+/* All fonts for all webpages */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+/* Centered */
+.centered {
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 0px;
+  text-align: center;
+  font-size: 10px;
+}
+
+/* Navigation Menu */
+
+/* Menu */
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: smaller;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin-right: 60px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Homepage */
+
+/* Homepage heading and subheading centered */
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.homepage h1,
+.homepage h2 {
+  text-align: center;
+}
+
+/* Images */
+
+img {
+  max-width: 1000px;
+  height: auto;
+}
+
+/* Inventory Table */
+
+/* Container */
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.inventory-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.inventory-table th,
+.inventory-table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.inventory-table th {
+  background-color: #000000;
+  color: white;
+  font-size: small;
+}
+
+.inventory-table td.actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Add Product Form */
+
+.add-product-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-product-form .form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.add-product-form label {
+  width: 120px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.add-product-form input,
+.add-product-form select,
+.add-product-form textarea {
+  width: 200px;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-product-form select {
+  width: 210px;
+}
+
+.add-product-form button[type="submit"],
+.inventory-table .delete-button,
+.inventory-table .view-button,
+.inventory-table .edit-button {
+  width: 150px;
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Inventory table buttons */
+.inventory-table .delete-button {
+  width: 100px;
+  height: 40px; /* Set the desired height for the buttons */
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color:  rgb(222, 9, 9);
+  color: white;
+  border: none;
+  padding: 10px;
+  text-decoration: none; /* Add text-decoration: none to remove underline */
+}
+
+.inventory-table .view-button,
+.inventory-table .edit-button {
+  width: 100px;
+  height: 40px; /* Set the desired height for the buttons */
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  text-decoration: none; /* Add text-decoration: none to remove underline */
+}
+
+.inventory-table .delete-button:hover {
+  background-color: rgb(102, 99, 99); /* Update the background color on hover if desired */
+}
+
+.inventory-table .view-button:hover,
+.inventory-table .edit-button:hover {
+  background-color: rgb(222, 9, 9); /* Update the background color on hover if desired */
+}
+
+/* Inventory table edits */
+.inventory-table th,
+.inventory-table td {
+  padding: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.inventory-table th {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-size: small;
+}
+
+.inventory-table .view-button,
+.inventory-table .edit-button {
+  font-size: 14px; /* Adjust the desired font size */
+}
+
+/* Add Product Form edits */
+
+.add-product-form {
+  max-width: 400px;
+  margin: 20px auto; /* Add margin to the top and bottom */
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center align the form */
+}
+
+.add-product-form .form-row {
+  display: flex;
+  flex-direction: column; /* Align the label and input in a column */
+  align-items: center; /* Center align the label and input */
+  margin-bottom: 20px;
+  width: 100%; /* Make the form row full width */
+}
+
+.add-product-form label {
+  width: 100%; /* Make the label full width */
+  text-align: center; /* Center align the label text */
+  margin-bottom: 5px; /* Add some spacing between the label and input */
+  font-weight: bold; /* Add font weight to the label */
+  font-size: small;
+  text-transform: uppercase; /* Capitalize the label text */
+}
+
+.add-product-form input,
+.add-product-form select,
+.add-product-form textarea {
+  width: calc(100% - 12px); /* Adjusted width to accommodate borders and padding */
+  height: 40px; /* Set a common height for input and select */
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.add-product-form button[type="submit"] {
+  width: 100%; /* Make the button full width */
+  margin-top: 20px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-product-form button[type="submit"]:hover {
+  background-color: rgb(222, 9, 9);
+}
+
+.add-product-form input[type="number"],
+.add-product-form textarea,
+.add-product-form select,
+.add-product-form input[type="text"] {
+  width: 100%; /* Make the input full width */
+}
+
+.add-product-form input[type="checkbox"] {
+  width: auto;
+  margin-left: 5px;
+}
+
+.add-product-form label.checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+.add-product-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.add-product-form .form-error {
+  color: red;
+  margin-top: 5px;
+}
+
+/* Manufacturers Page */
+
+/* Manufacturers container */
+.manufacturers-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.manufacturers-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.manufacturers-list li {
+  max-width: 450px; /* Adjust the desired maximum width */
+  margin: 0 auto; /* Center align the box horizontally */
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 15px; /* Adjust the vertical and horizontal padding */
+  margin-bottom: 15px; /* Adjust the vertical margin */
+  text-align: center; /* Center align the content */
+}
+
+.manufacturers-list h3 {
+  margin: 0;
+  margin-bottom: 5px; /* Adjust the vertical margin */
+  color: #333;
+  font-size: 18px; /* Adjust the font size */
+}
+
+.manufacturer-details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center; /* Center align the content */
+}
+
+.manufacturer-details li {
+  margin-bottom: 2px; /* Adjust the vertical margin */
+  font-size: 14px; /* Adjust the font size */
+  color: #000000;
+  text-align: center; /* Center align the content */
+}
+
+.manufacturer-details strong {
+  font-weight: bold;
+}
+
+.manufacturer-details a {
+  color: red;
+  text-decoration: none;
+}
+
+.manufacturer-details a:hover {
+  text-decoration: underline;
+}
+

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>{{ manufacturer.name }}</h2>
+    <p>Country: {{ manufacturer.country }}</p>
+    <p>Website: <a href="{{ manufacturer.website }}">{{ manufacturer.website }}</a></p>
+    <p>Contact Person: {{ manufacturer.contact_person }}</p>
+    <p>Email: {{ manufacturer.email }}</p>
+    <p>Phone Number: {{ manufacturer.phone_number }}</p>
+    <p>Address: {{ manufacturer.address }}</p>
+{% endblock %}
