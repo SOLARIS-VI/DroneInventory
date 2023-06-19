@@ -5,8 +5,8 @@
     <div class="details">
         <p>Description: {{ product.description }}</p>
         <p>Stock Quantity: {{ product.stock_quantity }}</p>
-        <p>Buying Cost: ${{ product.buying_cost }}</p>
-        <p>Selling Price: ${{ product.selling_price }}</p>
+        <p>Buying Cost: £{{ product.buying_cost }}</p>
+        <p>Selling Price: £{{ product.selling_price }}</p>
         <p>Manufacturer: {{ product.manufacturer.name }}</p>
     </div>
     <a href="/inventory/{{ product.id }}/edit">Edit</a>
