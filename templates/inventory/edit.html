@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h2>Edit Product</h2>
+    <h2>EDIT PRODUCT</h2>
     <form method="POST" action="/inventory/{{ product.id }}">
         <div>
             <label for="name">Name:</label>
@@ -31,6 +31,6 @@
                 {% endfor %}
             </select>
         </div>
-        <button type="submit">Update Product</button>
+        <button type="submit">UPDATE PRODUCT</button>
     </form>
 {% endblock %}

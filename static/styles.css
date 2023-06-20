@@ -216,6 +216,29 @@ img {
   font-size: 14px; /* Adjust the desired font size */
 }
 
+/* Edit and View Product Pages */
+.edit-product-button,
+.view-product-button {
+  width: 150px;
+  height: 40px;
+  margin-top: 10px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-content: center;
+}
+
+.edit-product-button:hover,
+.view-product-button:hover {
+  background-color: rgb(222, 9, 9);
+}
+
+
 /* Add Product Form edits */
 
 .add-product-form {
