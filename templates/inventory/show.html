@@ -1,13 +1,27 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h2>{{ product.name }}</h2>
-    <div class="details">
-        <p>Description: {{ product.description }}</p>
-        <p>Stock Quantity: {{ product.stock_quantity }}</p>
-        <p>Buying Cost: £{{ product.buying_cost }}</p>
-        <p>Selling Price: £{{ product.selling_price }}</p>
-        <p>Manufacturer: {{ product.manufacturer.name }}</p>
+    <div class="centered">
+        <div class="content-container">
+            <h2>{{ product.name }}</h2>
+            <ul class="details">
+                <li>
+                    <strong>Description:</strong> {{ product.description }}
+                </li>
+                <li>
+                    <strong>Stock Quantity:</strong> {{ product.stock_quantity }}
+                </li>
+                <li>
+                    <strong>Buying Cost:</strong> £{{ product.buying_cost }}
+                </li>
+                <li>
+                    <strong>Selling Price:</strong> £{{ product.selling_price }}
+                </li>
+                <li>
+                    <strong>Manufacturer:</strong> {{ product.manufacturer.name }}
+                </li>
+            </ul>
+        </div>
+        <a href="/inventory/{{ product.id }}/edit" class="edit-link">EDIT</a>
     </div>
-    <a href="/inventory/{{ product.id }}/edit">EDIT</a>
 {% endblock %}

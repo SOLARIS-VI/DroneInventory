@@ -1,10 +1,9 @@
-/* All fonts for all webpages */
+/* All Fonts On All Webpages */
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
 
-/* Centered */
 .centered {
   text-align: center;
 }
@@ -19,9 +18,10 @@ footer {
   font-size: 10px;
 }
 
+/* ........................................................................................... */
+
 /* Navigation Menu */
 
-/* Menu */
 .menu {
   display: flex;
   justify-content: center;
@@ -54,9 +54,10 @@ footer {
   text-decoration: none;
 }
 
+/* ........................................................................................... */
+
 /* Homepage */
 
-/* Homepage heading and subheading centered */
 .homepage {
   display: flex;
   flex-direction: column;
@@ -70,16 +71,289 @@ footer {
   text-align: center;
 }
 
-/* Images */
+/* ........................................................................................... */
 
+/* Images */
 img {
   max-width: 1000px;
   height: auto;
 }
 
+/* ........................................................................................... */
+
+/* Add Product Form */
+.add-product-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-product-form .form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.add-product-form label {
+  width: 120px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.add-product-form input,
+.add-product-form select,
+.add-product-form textarea {
+  width: 200px;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #ccc;   
+  border-radius: 4px;
+}
+
+.add-product-form select {
+  width: 210px;
+}
+
+.add-product-form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.add-product-form .form-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-product-form label {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: small;
+  text-transform: uppercase;
+}
+
+/* ........................................................................................... */
+
+/* Product Page Form */
+
+.add-product-form input,
+.add-product-form select,
+.add-product-form textarea {
+  width: calc(100% - 12px);
+  height: 40px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.add-product-form button[type="submit"] {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-product-form button[type="submit"]:hover {
+  background-color: rgb(222, 9, 9);
+}
+
+.add-product-form input[type="number"],
+.add-product-form textarea,
+.add-product-form select,
+.add-product-form input[type="text"] {
+  width: 100%;
+}
+
+.add-product-form input[type="checkbox"] {
+  width: auto;
+  margin-left: 5px;
+}
+
+.add-product-form label.checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+.add-product-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.add-product-form .form-error {
+  color: red;
+  margin-top: 5px;
+}
+
+/* ........................................................................................... */
+
+/* Edit Button Link > Update Product Destination Page */
+
+.add-product-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.add-product-form {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.add-product-form .form-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 400px;
+  height: 60px;
+}
+
+.add-product-form label {
+  width: 100%;
+  text-align: center;
+  margin-right: 0;
+}
+
+.add-product-form input,
+.add-product-form select,
+.add-product-form textarea {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-product-form select {
+  width: 100%;
+}
+
+.add-product-form button[type="submit"] {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-product-form button[type="submit"]:hover {
+  background-color: rgb(222, 9, 9);
+}
+
+.add-product-form input[type="text"],
+.add-product-form input[type="number"],
+.add-product-form select,
+.add-product-form textarea {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.add-product-form textarea {
+  height: 100px;
+}
+
+.add-product-form {
+  margin-top: 10px;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-product-form input,
+.add-product-form select,
+.add-product-form textarea {
+  text-align: center;
+}
+
+.add-product-form button[type="submit"]:hover {
+  background-color: red;
+}
+
+/* ........................................................................................... */
+
+/* View Button Link > Edit Product Destination Page */
+
+/* Centered Details On Page */
+.centered .details {
+  list-style: none;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 50vh; /* Change height to min-height */
+  border-radius: 10px;
+  box-sizing: border-box; /* Include padding in height calculation */
+  margin: 10px auto;
+  width: 400px; /* Set the desired width of the box */
+}
+
+/* Vertical Spacing of Text */
+.centered .details li {
+  margin-bottom: 20px;
+}
+
+/* Headings Above Details */
+.centered .details li strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Edit Button */
+.centered .edit-link {
+  background-color: #000000;
+  border-radius: 4px;
+  padding: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: small;
+  position: relative;
+  width: 300px;
+}
+
+
+/* Hover Color > Hover Button */
+.centered .edit-link:hover {
+  background-color: red;
+}
+
+/* ........................................................................................... */
+
 /* Inventory Table */
 
-/* Container */
 .container {
   max-width: 1500px;
   margin: 0 auto;
@@ -110,73 +384,27 @@ img {
   gap: 10px;
 }
 
-/* Add Product Form */
-
-.add-product-form {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.add-product-form .form-row {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.add-product-form label {
-  width: 120px;
-  text-align: right;
-  margin-right: 10px;
-}
-
-.add-product-form input,
-.add-product-form select,
-.add-product-form textarea {
-  width: 200px;
-  height: 30px;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.add-product-form select {
-  width: 210px;
-}
-
-.add-product-form button[type="submit"],
-.inventory-table .delete-button,
-.inventory-table .view-button,
-.inventory-table .edit-button {
-  width: 150px;
-  margin-top: 10px;
-  background-color: black;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 4px;
-}
-
-/* Inventory table buttons */
+/* Delete Button */
 .inventory-table .delete-button {
   width: 100px;
-  height: 40px; /* Set the desired height for the buttons */
+  height: 35px;
   margin-right: 10px;
   margin-left: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-  background-color:  rgb(222, 9, 9);
+  background-color: rgb(222, 9, 9);
   color: white;
   border: none;
+  border-radius: 4px;
   padding: 10px;
-  text-decoration: none; /* Add text-decoration: none to remove underline */
+  text-decoration: none;
 }
 
+/* View & Edit Button */
 .inventory-table .view-button,
 .inventory-table .edit-button {
   width: 100px;
-  height: 40px; /* Set the desired height for the buttons */
+  height: 35px;
   margin-right: 10px;
   margin-left: 10px;
   margin-top: 10px;
@@ -184,20 +412,24 @@ img {
   background-color: black;
   color: white;
   border: none;
+  border-radius: 4px;
   padding: 10px;
-  text-decoration: none; /* Add text-decoration: none to remove underline */
+  text-decoration: none;
 }
 
+/* Hover Color > Delete Button */
 .inventory-table .delete-button:hover {
-  background-color: rgb(102, 99, 99); /* Update the background color on hover if desired */
+  background-color: rgb(102, 99, 99);
 }
 
+/* Hover Color > View & Edit Buttons */
 .inventory-table .view-button:hover,
 .inventory-table .edit-button:hover {
-  background-color: rgb(222, 9, 9); /* Update the background color on hover if desired */
+  background-color: rgb(222, 9, 9);
 }
 
-/* Inventory table edits */
+/* Selects The <th> Elements Within The "inventory-table" Class */
+/* Selects The <td> Elements Within The "inventory-table" Class */
 .inventory-table th,
 .inventory-table td {
   padding: 10px;
@@ -205,127 +437,23 @@ img {
   text-align: center;
 }
 
+/* Remove The Table Headings Background Block Color */
 .inventory-table th {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   font-size: small;
 }
 
+/* Font Size > View & Edit Buttons */
 .inventory-table .view-button,
 .inventory-table .edit-button {
-  font-size: 14px; /* Adjust the desired font size */
+  font-size: 14px;
 }
 
-/* Edit and View Product Pages */
-.edit-product-button,
-.view-product-button {
-  width: 150px;
-  height: 40px;
-  margin-top: 10px;
-  background-color: #000000;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 4px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  align-content: center;
-}
-
-.edit-product-button:hover,
-.view-product-button:hover {
-  background-color: rgb(222, 9, 9);
-}
-
-
-/* Add Product Form edits */
-
-.add-product-form {
-  max-width: 400px;
-  margin: 20px auto; /* Add margin to the top and bottom */
-  padding: 20px;
-  background-color: #f5f5f5;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center; /* Center align the form */
-}
-
-.add-product-form .form-row {
-  display: flex;
-  flex-direction: column; /* Align the label and input in a column */
-  align-items: center; /* Center align the label and input */
-  margin-bottom: 20px;
-  width: 100%; /* Make the form row full width */
-}
-
-.add-product-form label {
-  width: 100%; /* Make the label full width */
-  text-align: center; /* Center align the label text */
-  margin-bottom: 5px; /* Add some spacing between the label and input */
-  font-weight: bold; /* Add font weight to the label */
-  font-size: small;
-  text-transform: uppercase; /* Capitalize the label text */
-}
-
-.add-product-form input,
-.add-product-form select,
-.add-product-form textarea {
-  width: calc(100% - 12px); /* Adjusted width to accommodate borders and padding */
-  height: 40px; /* Set a common height for input and select */
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-.add-product-form button[type="submit"] {
-  width: 100%; /* Make the button full width */
-  margin-top: 20px;
-  background-color: #000000;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 4px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.add-product-form button[type="submit"]:hover {
-  background-color: rgb(222, 9, 9);
-}
-
-.add-product-form input[type="number"],
-.add-product-form textarea,
-.add-product-form select,
-.add-product-form input[type="text"] {
-  width: 100%; /* Make the input full width */
-}
-
-.add-product-form input[type="checkbox"] {
-  width: auto;
-  margin-left: 5px;
-}
-
-.add-product-form label.checkbox-label {
-  display: flex;
-  align-items: center;
-}
-
-.add-product-form h2 {
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.add-product-form .form-error {
-  color: red;
-  margin-top: 5px;
-}
+/* ........................................................................................... */
 
 /* Manufacturers Page */
 
-/* Manufacturers container */
 .manufacturers-container {
   max-width: 800px;
   margin: 0 auto;
@@ -339,34 +467,34 @@ img {
 }
 
 .manufacturers-list li {
-  max-width: 450px; /* Adjust the desired maximum width */
-  margin: 0 auto; /* Center align the box horizontally */
+  max-width: 450px;
+  margin: 0 auto;
   background-color: #f5f5f5;
   border-radius: 10px;
-  padding: 15px; /* Adjust the vertical and horizontal padding */
-  margin-bottom: 15px; /* Adjust the vertical margin */
-  text-align: center; /* Center align the content */
+  padding: 15px;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 .manufacturers-list h3 {
   margin: 0;
-  margin-bottom: 5px; /* Adjust the vertical margin */
+  margin-bottom: 5px;
   color: #333;
-  font-size: 18px; /* Adjust the font size */
+  font-size: 18px;
 }
 
 .manufacturer-details {
   list-style: none;
   padding: 0;
   margin: 0;
-  text-align: center; /* Center align the content */
+  text-align: center;
 }
 
 .manufacturer-details li {
-  margin-bottom: 2px; /* Adjust the vertical margin */
-  font-size: 14px; /* Adjust the font size */
+  margin-bottom: 2px;
+  font-size: 14px;
   color: #000000;
-  text-align: center; /* Center align the content */
+  text-align: center;
 }
 
 .manufacturer-details strong {
@@ -381,4 +509,3 @@ img {
 .manufacturer-details a:hover {
   text-decoration: underline;
 }
-
