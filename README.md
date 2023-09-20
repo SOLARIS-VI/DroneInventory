@@ -43,4 +43,36 @@ git clone https://github.com/your-username/drone-inventory.git
 
 ## Step 2
 Navigate to the Project Directory:
+cd DroneInventory
+
+## Step 3
+Install Dependencies:
+pip install -r requirements.txt
+
+## Step 4
+Set Up the Database:
+Create a PostgreSQL database for the project.
+Update the database configuration in the project settings to connect to your database.
+
+## Step 5
+Initialize the Database:
+python manage.py db init
+python manage.py db migrate
+python manage.py db upgrade
+
+## Step 6
+Run the Application:
+python3 app.py
+
+## Step 7
+Access the Application:
+Select the command key on mac or ctrl+L, then hover and select with mouse cursor the local host that should be running on: http://127.0.0.1:5000
+With these steps completed, you will have the Drone Inventory Management System up and running on your local machine. 
+
+
+
+
+
+
+
 
