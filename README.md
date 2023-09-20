@@ -1,4 +1,4 @@
-# Drone Shop Inventory App
+# Drone Inventory
 
 Build an app which allows a Drone Shopkeeper to track their Drone Shop's Inventory. 
 This is not an app that customers will see; it is an administration and management app for the shop workers to use.
