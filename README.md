@@ -67,7 +67,8 @@ python3 app.py
 ## Step 7
 Access the Application:
 
-Select the command key on mac or ctrl+L, then hover and select with mouse cursor the local host that should be running on: http://127.0.0.1:5000
+Select the command key on mac or ctrl+L, then hover and select with mouse 
+cursor the local host that should be running on: http://127.0.0.1:5000
 
 With these steps completed, you will have the Drone Inventory Management System up and running on your local machine. 
 
